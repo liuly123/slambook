@@ -50,7 +50,7 @@ int main ( int argc, char** argv )
 
     // visualization
     //初始化坐标空间显示窗口，并添加第一帧的相机位姿（初始值为原点）
-    cv::viz::Viz3d vis ( "Visual Odometry" );
+    cv::viz::Viz3d vis ( "视觉里程计" );
     cv::viz::WCoordinateSystem world_coor ( 1.0 ), camera_coor ( 0.5 );
     cv::Point3d cam_pos ( 0, -1.0, -1.0 ), cam_focal_point ( 0,0,0 ), cam_y_dir ( 0,1,0 );
     cv::Affine3d cam_pose = cv::viz::makeCameraPose ( cam_pos, cam_focal_point, cam_y_dir );
